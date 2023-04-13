@@ -20,8 +20,23 @@
         <div id="feed">
             
         </div>
-        <section id="checkout-wrapper" class="checkout-wrapper">
+        <section id="checkout-wrapper">
                 <!-- checkoutWrapper -->
+        </section>
+        <div class="payment-modal" id="payment-modal">
+            <h2 class="modal-head">Enter card details</h2>
+            <form class="payment-form" onsubmit="return false">
+                <input id="input-detail" class="input-detail" type="text" name="name"
+                placeholder="Enter your name" required>
+                <input id="input-detail" class="input-detail" type="text" name="card-num" placeholder="Enter card number" required>
+                <input id="input-detail" class="input-detail" type="text" name="cvv" placeholder="Enter CVV" required>
+                <button class="complete-btn" id="pay-btn">Pay</button>
+            </form>
+        </div>
+        <section class="note-el" id="note-el">
+            <div class="complete-note">
+                <h2 class="thank-note" id="thank-note">Thanks, Your order is on it's way</h2>
+            </div>
         </section>
     </main>
     <script src="index.js" type="module"></script>

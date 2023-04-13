@@ -111,7 +111,6 @@ h3 {
 
 .checkout-total {
     display: flex;
-    
 }
 
 .complete-btn {
@@ -130,4 +129,72 @@ h3 {
 
 .checkout-wrapper {
     max-width: 508px;
+    display: block;
 }
+
+.checkout-block {
+    display: block;
+}
+
+
+.payment-modal {
+    width: 424px;
+    height: 442px;
+    border-radius: 3.5px;
+    box-shadow: 5px 5px 255px 0px;
+    background-color: #ffffff;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.payment-modal *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modal-head {
+    text-align: center;
+    display: inline-block;
+    margin: 47px 50px 46px 90px; 
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 376px;
+    height: 71%;
+    margin-bottom: 24px;
+    padding: 16px;
+    border-radius: 3.5px;
+    border: solid #757575;
+}
+
+.payment-form button {
+    width: 376px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    /* margin-top: 46px; */
+    /* margin-bottom: 80px; */
+}
+
+.complete-note {
+    width: 504px;
+    height: 120px;
+    display: none;
+    margin-bottom: 252px; 
+    background-color: #ECFDF5;
+}
+
+.thank-note {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    color: #065F46;
+}
+

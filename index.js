@@ -3,18 +3,25 @@ import { menuArray } from "./data.js"
 let subCheckout =``
 let total = 0
 const orderArray = []
+let name = ""
 
 document.addEventListener('click', function(e) {
-    if(Number(e.target.dataset.add)>=0) {
+    if(Number(e.target.dataset.add) >= 0) {
         handleAddClick(Number(e.target.dataset.add))
     }
-    if(e.target.dataset.val >= 0) {
+    else if(e.target.dataset.val >= 0) {
         removeOrder(e.target.dataset.val)
         // console.log(e.target.dataset.val)
     }
-    // if(e.target.id == "complete-btn") {
-    //     console.log("completed")
-    // }
+    else if(e.target.id === "complete-btn") {
+        document.getElementById("payment-modal").style.display = "block"
+        
+    }
+    else if(e.target.id === "pay-btn") {
+        // GRABBING THANK NAME FROM FORM AND CALLING THANK NOTE
+        name = document.getElementsByTagName("input")[0].value
+        renderThankNote()
+    }
 })
 
 function removeOrder(index) {
@@ -116,15 +123,29 @@ function getItemsHtml() {
         </div>
         `
     }) 
+
     
     return itemsHtml
 }
 
+// NOT ABLE TO RENDER THANK NOTE
+
+function renderThankNote() {
+    document.getElementById("payment-modal").style.display = "none"
+    document.getElementById("checkout-block").style.display = "none"
+    document.querySelector(".complete-note").style.display = "block"
+    console.log("thank note")
+}
+
+
+
 function render() {
     document.getElementById("feed").innerHTML = getItemsHtml()
+    // console.log("finish")
 }
 
 render()
+
 
 
 
