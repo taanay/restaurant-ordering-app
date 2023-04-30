@@ -75,7 +75,8 @@ function renderOrder() {
 /* render when the add button is clicked without affecting the "total price" and "complete order btn"  */
 
 function handleAddClickRender(subCheckout, total) {
-        let checkoutContent = ``
+    document.querySelector(".complete-note").style.display = "none"
+    let checkoutContent = ``
         checkoutContent = `
             <section id="checkout-block" class="checkout-block">
                 <h2 id="checkout-head" class="checkout-head">Your order</h2>
@@ -131,10 +132,13 @@ function getItemsHtml() {
 // NOT ABLE TO RENDER THANK NOTE
 
 function renderThankNote() {
+
     document.getElementById("payment-modal").style.display = "none"
     document.getElementById("checkout-block").style.display = "none"
     document.querySelector(".complete-note").style.display = "block"
-    console.log("thank note")
+
+// empty the order list after pay-btn is clicked
+    orderArray.length = 0
 }
 
 

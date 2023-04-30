@@ -44,22 +44,22 @@ h1, h2, h3 {
     display: flex;
     width: 508px;
     height: 140px;
-    margin: 67px 0 46px 46px;
+    margin: 4.1875em 0 2.875em 2.875em;
     border-bottom: 1px solid #D2D2D2;
 }
 
 .item {
-    margin: 0 31px 0 0;
+    margin-right: 1.9375em;
     width: 70px;
     height: 70px;
 }
 
 .item-types {
-    margin: 8px 0 8px 0;
+    margin: 0.5em 0;
 }
 
 .details {
-    margin-left: 31px;
+    margin-left: 1.9375em;
 }
 
 .add-img {
@@ -95,11 +95,10 @@ h1, h2, h3 {
 }
 
 .remove {
-    /* margin-right: 352px; */
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 24px;
-    margin-left: 13px;
-    padding-top: 3px;
+    margin-left: 1.0834em;
+    padding-top: 0.25em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #BBBBBB;
     cursor: pointer;
